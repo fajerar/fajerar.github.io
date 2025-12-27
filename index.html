@@ -1,94 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MACS – Cybersecurity Awareness App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
 
-<!-- Navigation -->
-<nav>
-  <div class="nav-container">
-    <h1>My Project</h1>
-    <ul>
-      <li><a href="#aim">Aim</a></li>
-      <li><a href="#objectives">Objectives</a></li>
-      <li><a href="#methodology">Methodology</a></li>
-      <li><a href="#data">Data</a></li>
-      <li><a href="#development">Development</a></li>
-      <li><a href="#future">Future Work</a></li>
-      <li><a href="#team">Team</a></li>
-    </ul>
-  </div>
-</nav>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
 
-<!-- Sections -->
-<section id="aim" class="section">
-  <div class="container">
-    <h2>Aim & Problem Statement</h2>
-    <p>Replace this with your project aim.</p>
-    <p>Replace this with your problem statement.</p>
-  </div>
+<!-- Hero Section -->
+<section class="bg-blue-900 text-white min-h-screen flex items-center justify-center">
+    <div class="text-center max-w-4xl px-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+            Development of a Mobile Application for Educational Cyber Security Awareness (MACS)
+        </h1>
+        <p class="text-lg md:text-xl mb-8 opacity-90">
+            Enhancing cybersecurity awareness among secondary school students through interactive learning
+        </p>
+        <a href="#about" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold transition transform hover:scale-105">
+            Explore the App
+        </a>
+    </div>
 </section>
 
-<section id="objectives" class="section">
-  <div class="container">
-    <h2>Project Objectives</h2>
-    <ul>
-      <li>Objective 1</li>
-      <li>Objective 2</li>
-      <li>Objective 3</li>
-    </ul>
-  </div>
-</section>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-<section id="methodology" class="section">
-  <div class="container">
-    <h2>Research Design & Methodology</h2>
-    <p>Describe your research design, development process, and tools.</p>
-  </div>
-</section>
+        <!-- About -->
+        <section id="about" class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">About the Project</h2>
+            <p>
+                MACS (Mobile Application for Educational Cyber Security Awareness) is a mobile-based solution
+                designed to improve cybersecurity awareness among secondary school students.
+            </p>
+        </section>
 
-<section id="data" class="section">
-  <div class="container">
-    <h2>Data Collection & Analysis</h2>
-    <p>Explain how data was collected and analyzed.</p>
-  </div>
-</section>
+        <!-- Problem Statement -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Problem Statement</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Many people in Bahrain have been victims of online scams.</li>
+                <li>Students have low cybersecurity awareness due to traditional learning methods.</li>
+                <li>There is a need for an interactive and engaging educational solution.</li>
+            </ul>
+        </section>
 
-<section id="development" class="section">
-  <div class="container">
-    <h2>Development Details</h2>
-    <p>Include technologies used, architecture, and key features.</p>
-  </div>
-</section>
+        <!-- Aim & Objectives -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Aim & Objectives</h2>
+            <p class="mb-3 font-semibold">Aim:</p>
+            <p class="mb-4">
+                Enhance cybersecurity awareness among secondary school students.
+            </p>
+            <p class="mb-3 font-semibold">Objectives:</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Educate students about cyber threats</li>
+                <li>Promote safe online behavior</li>
+                <li>Use interactive learning methods</li>
+            </ul>
+        </section>
 
-<section id="future" class="section">
-  <div class="container">
-    <h2>Future Work</h2>
-    <ul>
-      <li>Feature enhancement</li>
-      <li>Performance optimization</li>
-      <li>Security improvements</li>
-    </ul>
-  </div>
-</section>
+        <!-- App Overview -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Application Overview</h2>
+            <p>
+                MACS simplifies cybersecurity concepts using interactive content,
+                allowing students to learn through real-world scenarios and activities.
+            </p>
+        </section>
 
-<section id="team" class="section">
-  <div class="container">
-    <h2>Team & Supervisor</h2>
-    <p><strong>Team Members:</strong> Names & roles</p>
-    <p><strong>Supervisor:</strong> Name</p>
-  </div>
-</section>
+        <!-- Features -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Key Features</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>AI Chatbot</strong> for instant cybersecurity guidance</li>
+                <li><strong>Scenario-based quizzes</strong></li>
+                <li><strong>Online team multiplayer learning</strong></li>
+                <li><strong>Real-time safety awareness</strong></li>
+            </ul>
+        </section>
 
-<footer>
-  <p>© 2025 My Project</p>
+        <!-- Technology -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Technology & Development</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Mobile-based application</li>
+                <li>Agile-based development approach</li>
+                <li>Compatible with multiple operating systems</li>
+                <li>User-focused interface</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Conclusion & Future Work</h2>
+            <p>
+                MACS enhances cybersecurity awareness through interactive learning.
+                Future work includes personalized avatars and expanded features.
+            </p>
+        </section>
+
+        <!-- Contribution -->
+        <section class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Project Contribution</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Developed a mobile-based educational application</li>
+                <li>Employed multiple questionnaires</li>
+                <li>Prepared research article for academic publication</li>
+            </ul>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8 text-center">
+    <p>
+        University of Bahrain – Department of Information Systems <br>
+        Supervised by Dr. Ehab J. Adwan | Academic Year 2025–2026
+    </p>
 </footer>
 
 </body>
 </html>
-
