@@ -1,97 +1,66 @@
-/* General */
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #0a1f44;
-  color: #ffffff;
-  scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Navigation */
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #021030;
-  padding: 15px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  z-index: 1000;
+header .logo img {
+    width: 100px;
 }
 
-.nav-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+header h1, header h2, header .tagline {
+    margin: 0;
 }
 
-nav h1 {
-  font-weight: 600;
-  font-size: 1.5rem;
+h3 {
+    color: #003366;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav a:hover {
-  color: #1ecbe1;
-  transition: 0.3s;
+ul {
+    list-style-type: square;
 }
 
-/* Sections */
-.section {
-  padding: 80px 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #021f44;
-  padding: 40px;
-  border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-.container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
-h2 {
-  color: #1ecbe1;
-  margin-bottom: 20px;
+th {
+    background-color: #003366;
+    color: white;
 }
 
-ul li {
-  margin: 10px 0;
-}
-
-/* Footer */
 footer {
-  background-color: #021030;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  color: #888;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
-
-/* Responsive */
-@media(max-width: 768px){
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .container {
-    padding: 30px;
-  }
-}
-
