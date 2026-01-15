@@ -1,66 +1,113 @@
+:root {
+  --bg-black: #05070d;
+  --bg-blue: #0b163f;
+  --accent: #1da1ff;
+  --text-main: #e6e9f0;
+  --text-muted: #9aa4c7;
+  --card-bg: #0f1b4c;
+  --border-glow: rgba(29, 161, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg-black), var(--bg-blue));
+  color: var(--text-main);
+  line-height: 1.7;
 }
 
 header {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-glow);
 }
 
-header .logo img {
-    width: 100px;
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: var(--accent);
+  letter-spacing: 2px;
 }
 
-header h1, header h2, header .tagline {
-    margin: 0;
-}
-
-h3 {
-    color: #003366;
+header p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 70px 10%;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #cfe4ff;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
 ul {
-    list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #24306a;
 }
 
 th {
-    background-color: #003366;
-    color: white;
+  color: var(--accent);
 }
 
 footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-glow);
 }
